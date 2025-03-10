@@ -10,7 +10,7 @@ const Home = () => {
                         Hi, I am Jessica!
                     </h1>
                     <p className="text-[#9c737c] text-lg mb-8 max-w-lg mx-auto">
-                        I'm a full-stack developer who loves crafting clean, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
+                        Welcome to <strong>Jessica's Portfolio</strong>! As you scroll down, you will be know everything about me
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a href="#projects" className="bg-[#9c737c] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(156,115,124,1)]">

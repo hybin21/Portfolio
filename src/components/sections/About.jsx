@@ -95,18 +95,27 @@ const About = () => {
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
+                    <div className="flex justify-center">
+                        <div className="bg-white p-4 rounded-2xl mb-4 border-[#705158]/30 border shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
+                            <img
+                                src="pfp.jpeg"
+                                alt="Jessica's Image"
+                                className="rounded-2xl object-cover w-64 h-64"
+                            />
+                        </div>
+                    </div>
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#e6b1bd] to-[#9c737c] bg-clip-text text-transparent text-center">
                         About Me
                     </h2>
                     <div className="glass rounded-xl p-8 border-[#705158]/30 border hover:-translate-y-1 transition-all">
                         <p className="text-[#9c737c] mb-6">
-                            Passionate developer with expertise in building scalable web applications and creating innovative solutions.
+                            I enjoy creating high-performing, minimalist mobile and online apps that combine style and utility. I add creativity to both digital and physical work by working on craft projects like knitting and crocheting when I'm not computing.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Frontend</h3>
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Programming Language</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {["React", "TypeScript", "TailwindCss"].map((tech, key) => (
+                                    {["C++","Python","Java","JavaScript","TypeScript","Dart","SwiftUI","HTML","CSS"].map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
@@ -117,9 +126,74 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Backend</h3>
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Frameworks & Libraries</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {["node.js", "Python", "AWS", "MySQL", "PostgreSQL"].map((tech, key) => (
+                                    {["React","React Native","Node.js","Flutter","QT"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
+                                        >
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Platforms & Operating Systems</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {["Linux","Windows","iOS"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
+                                        >
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Developer Tools</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {["Visual Studio Code","Visual Studio","Android Studio","Xcode","Eclipse","PyCharm","WebStorm","Github"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
+                                        >
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Database</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {["MySQL","NoSQL","PostgreSQL"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
+                                        >
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Database</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {["MySQL","NoSQL","PostgreSQL"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
+                                        >
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Crafting & Design</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {["Knitting","Crocheting"].map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
