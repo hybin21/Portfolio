@@ -12,7 +12,7 @@ const Navbar = ({menuOpen,setMenuOpen}) => {
                 <div className = "flex justify-between items-center h-16">
 
                     <a href="#home" className = "font-mono text-l font-bold text-[#9c737c]">
-                        Jessica's Protfolio
+                        Jessica's Portfolio
                     </a>
                     <div className = "w-7 h-5 relative cursor-pointer z-40 md:hidden text-[#9c737c]" onClick = {() => setMenuOpen((prev) => !prev)}>
                         &#9776;
