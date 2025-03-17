@@ -97,25 +97,25 @@ const About = () => {
                 <div className="max-w-3xl mx-auto px-4">
                     <div className="flex justify-center">
                         <div className="bg-white p-4 rounded-2xl mb-4 border-[#705158]/30 border shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
-                            <img
+                            <a href = "https://www.linkedin.com/in/jessicahahm/" ><img
                                 src="pfp.jpeg"
                                 alt="Jessica's Image"
                                 className="rounded-2xl object-cover w-64 h-64"
-                            />
+                            /></a>
+
                         </div>
                     </div>
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#e6b1bd] to-[#9c737c] bg-clip-text text-transparent text-center">
                         About Me
                     </h2>
                     <div className="glass rounded-xl p-8 border-[#705158]/30 border hover:-translate-y-1 transition-all">
-                        <p className="text-[#9c737c] mb-6">
+                        <p className="text-[#9c737c] mb-4">
                             I enjoy creating high-performing, minimalist mobile and online apps that combine style and utility. I add creativity to both digital and physical work by working on craft projects like knitting and crocheting when I'm not computing.
-                        </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2">
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-xl font-bold mb-4 text-[#705158]">Programming Language</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {["C++","Python","Java","JavaScript","TypeScript","Dart","SwiftUI","HTML","CSS"].map((tech, key) => (
+                                    {["C++","Python","Java","JavaScript","TypeScript","Dart","SwiftUI","HTML","CSS","Tailwind CSS"].map((tech, key) => (
                                         <span
                                             key={key}
                                             className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
@@ -177,19 +177,7 @@ const About = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4 text-[#705158]">Database</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {["MySQL","NoSQL","PostgreSQL"].map((tech, key) => (
-                                        <span
-                                            key={key}
-                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-3 rounded-full text-sm hover:bg-[#9c737c]/20 transition"
-                                        >
-                                        {tech}
-                                    </span>
-                                    ))}
-                                </div>
-                            </div>
+
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                                 <h3 className="text-xl font-bold mb-4 text-[#705158]">Crafting & Design</h3>
                                 <div className="flex flex-wrap gap-2">
@@ -243,6 +231,16 @@ const About = () => {
                         <WorkExperience />
                     </div>
                 </div>
+                <RevealOnScroll>
+                    <div className="flex justify-center relative mt-40">
+                        <a href="#projects">
+                            <svg className="w-10 text-[#9c737c]" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 16.5l-8-8 1.5-1.5L12 13.5l6.5-6.5 1.5 1.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </RevealOnScroll>
+
             </RevealOnScroll>
 
         </section>

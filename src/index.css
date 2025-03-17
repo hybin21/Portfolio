@@ -41,3 +41,9 @@ html,body{
   opacity: 1;
   transform: translateY(0);
 }
+@layer utilities {
+  .linkedin-icon {
+    @apply w-5 transition-all duration-300;
+    filter: invert(36%) sepia(11%) saturate(195%) hue-rotate(307deg) brightness(86%) contrast(87%);
+  }
+}

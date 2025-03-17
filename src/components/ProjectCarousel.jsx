@@ -8,7 +8,7 @@ import { Pagination, Navigation } from "swiper/modules";
 const ProjectCarousel = ({imageList}) => {
 
     return (
-        <div className="w-full max-w-2xl mx-auto my-10 p-6  rounded-xl shadow-lg border-[#705158]/30 border">
+        <div className="w-full max-w-xl mx-auto my-10 p-6  rounded-xl shadow-lg border-[#705158]/30 border">
             <h2 className="text-2xl font-bold text-center mb-4 text-[#9c737c]">Preview</h2>
             <Swiper
                 pagination={{ clickable: true }}

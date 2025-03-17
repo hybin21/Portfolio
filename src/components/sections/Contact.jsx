@@ -27,7 +27,7 @@ const Contact = () => {
     console.log("PUBLIC_KEY:", PUBLIC_KEY);
 
     // Ensure form data is properly structured
-    const formData = new FormData(e.target);
+    // const formData = new FormData(e.target);
 
     emailjs
         .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
@@ -43,10 +43,7 @@ const Contact = () => {
   };
 
   return (
-      <section
-          id="contact"
-          className="min-h-screen flex justify-center items-center py-20"
-      >
+      <section id = "contact" className = "min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
           <div className="w-200 max-w-lg px-6 py-8 bg-white shadow-lg rounded-lg border border-[#705158]/30 mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-[#e6b1bd] to-[#9c737c] bg-clip-text text-transparent">
