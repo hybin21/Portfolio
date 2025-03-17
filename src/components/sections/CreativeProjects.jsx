@@ -4,7 +4,7 @@ import ProjectCarousel from "../ProjectCarousel.jsx";
 
 const CreativeProjects = () => {
     const vestImages = ['blue-vest.png'];
-    const scarfImages = ["pink.png"];
+    const scarfImages = ["pink-scarf.png"];
     return (
         <section id = "creativeprojects" className = "min-h-screen flex items-center justify-center py-20">
             <RevealOnScroll>

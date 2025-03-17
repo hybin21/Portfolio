@@ -5,6 +5,7 @@ import ProjectCarousel from "../ProjectCarousel.jsx";
 const Projects = () => {
     const anyMovieImages= ["anymovie-1.png","anymovie-2.png","anymovie-3.png","anymovie-4.png"];
     const scsImages = ['tree-hole-1.png',"tree-hole-2.png"];
+    const driveImages = ['gdrive-1.png','gdrive-2.png','gdrive-3.png','gdrive-4.png','gdrive-5.png','gdrive-6.png','gdrive-7.png']
     return (
         <section id = "projects" className = "min-h-screen flex items-center justify-center py-20">
             <RevealOnScroll>
@@ -45,6 +46,40 @@ const Projects = () => {
                             </div>
                             <div className="w-full h-[400px] flex justify-center items-center">
                                 <ProjectCarousel imageList={anyMovieImages}/>
+                            </div>
+                        </div>
+                        <div className="p-6 rounded-xl border-[#705158]/30 border min-h-[520px] flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(99,72,78,1)] transition-all">
+                            <div>
+                                <h3 className="text-xl text-[#705158] font-bold mb-4">Jess's G-Drive</h3>
+                                <p>
+                                    Web platform that mimics google photos.
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4 mt-4">
+                                    {["React", "Google Cloud Console", "Google Photos API", "O-Auth", "Web Development", "GitHub Pages"].map((tech, key) => (
+                                        <span
+                                            key={key}
+                                            className="bg-[#9c737c]/10 text-[#9c737c] py-1 px-4 rounded-full text-sm hover:bg-[#9c737c]/10 hover:shadow-[0_2px_8px_rgba(99,72,78,0.1)] transition-all"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <div className="flex items-center space-x-4 my-4">
+                                        <a href="https://github.com/hybin21/JessGDrive"
+                                           className="text-[#9c737c] hover:text-[#332528] flex items-center">
+                                            <img className="w-5" src={"github_logo.png"} alt="GitHub"/>
+                                        </a>
+                                        <a href="https://hybin21.github.io/JessGDrive"
+                                           className="text-[#9c737c] hover:text-[#332528] flex items-center">
+                                            <img className="w-5" src={"web.png"} alt="Link"/>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="w-full h-[400px] flex justify-center items-center">
+                                <ProjectCarousel imageList={driveImages}/>
                             </div>
                         </div>
                         <div className="p-6 rounded-xl border-[#705158]/30 border min-h-[520px] flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(99,72,78,1)] transition-all">
@@ -121,6 +156,7 @@ const Projects = () => {
                             </div>
 
                         </div>
+
 
                     </div>
                 </div>
