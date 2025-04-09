@@ -25,7 +25,7 @@ const Home = () => {
                            className="border border-[#9c737c] text-[#9c737c] py-3 px-6 rounded font-medium transition-all duration-200 bg-[#9c737c]/10 hover:bg-[#9c737c]/30 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(156,115,124,1)]">
                             <img className="w-5 linkedin-icon" src={"linkedin.png"} alt="LinkedIn"/>
                         </a>
-                        <a href="Jessica_Hahm_Resume.pdf" target="_blank" rel="noopener noreferrer"  className="bg-[#9c737c] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(156,115,124,1)]">
+                        <a href="Jessica_Hahm_Resume.pdf?v=2"  target="_blank" rel="noopener noreferrer"  className="bg-[#9c737c] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(156,115,124,1)]">
                             <img className="w-5 h-5" src="resume.png" alt="Resume"/>
                         </a>
 
